@@ -1,0 +1,274 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* @세팅구역 */
+body { background: #03361f; font-size: 10px; font-family: "MaisonNeueMedium",sans-serif; min-height: 100vh; -ms-overflow-style: none; /* IE and Edge */ scrollbar-width: none; /* Firefox */ }
+
+body::-webkit-scrollbar { display: none; }
+
+input, textarea, select, table, button, code { font: inherit; }
+
+*, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+a { color: inherit; cursor: pointer; text-decoration: none; }
+
+a:hover, a:focus { text-decoration: none; }
+
+img { vertical-align: top; max-width: 100%; }
+
+button { border: 0; background-color: transparent; cursor: pointer; }
+
+button:disabled { cursor: not-allowed; }
+
+select, input, textarea, button { -webkit-appearance: none; }
+
+input[type="number"] { -moz-appearance: textfield; }
+
+input:disabled { background-color: rgba(255, 255, 255, 0); cursor: not-allowed; }
+
+select { border: 0; background-color: transparent; cursor: pointer; }
+
+select::-ms-expand { display: none; }
+
+input, textarea { font-size: inherit; border: 0; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* Chrome, Safari, Firefox */ color: #444; opacity: 1; }
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* Chrome, Safari, Firefox */ color: #444; opacity: 1; }
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder { /* Chrome, Safari, Firefox */ color: #444; opacity: 1; }
+
+input::placeholder, textarea::placeholder { /* Chrome, Safari, Firefox */ color: #444; opacity: 1; }
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { /* IE, Edge */ color: #444; opacity: 1; }
+
+input[readonly]::-webkit-input-placeholder, input:disabled::-webkit-input-placeholder, textarea[readonly]::-webkit-input-placeholder, textarea:disabled::-webkit-input-placeholder { /* Chrome, Safari, Firefox */ color: rgba(0, 0, 0, 0.2); opacity: 1; }
+
+input[readonly]:-ms-input-placeholder, input:disabled:-ms-input-placeholder, textarea[readonly]:-ms-input-placeholder, textarea:disabled:-ms-input-placeholder { /* Chrome, Safari, Firefox */ color: rgba(0, 0, 0, 0.2); opacity: 1; }
+
+input[readonly]::-ms-input-placeholder, input:disabled::-ms-input-placeholder, textarea[readonly]::-ms-input-placeholder, textarea:disabled::-ms-input-placeholder { /* Chrome, Safari, Firefox */ color: rgba(0, 0, 0, 0.2); opacity: 1; }
+
+input[readonly]::placeholder, input:disabled::placeholder, textarea[readonly]::placeholder, textarea:disabled::placeholder { /* Chrome, Safari, Firefox */ color: rgba(0, 0, 0, 0.2); opacity: 1; }
+
+input[readonly]:-ms-input-placeholder, input:disabled:-ms-input-placeholder, textarea[readonly]:-ms-input-placeholder, textarea:disabled:-ms-input-placeholder { /* IE, Edge */ color: rgba(0, 0, 0, 0.2); opacity: 1; }
+
+input::-ms-clear, input::-ms-reveal, textarea::-ms-clear, textarea::-ms-reveal { /* IE, Edge */ display: none; }
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-webkit-inner-spin-button, textarea::-webkit-outer-spin-button { -webkit-appearance: none; }
+
+.blind { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px; }
+
+.hidden, [hidden] { display: none !important; }
+
+@font-face { font-family: 'HMaisonNeueMedium'; src: url(../fonts/MaisonNeueExtendedWEB-Medium.woff2) format("woff2"); font-weight: 500; }
+
+@font-face { font-family: 'MaisonNeueBlack'; src: url(../fonts/MaisonNeueExtendedWEB-Black.woff2) format("woff2"); font-weight: 900; }
+
+.gnb-area { height: 62px; left: 0; position: fixed; right: 0; top: 0; z-index: 5; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 20px 30px; color: #fff068; }
+
+.gnb-area .main-logo { margin-right: 55px; }
+
+.gnb-area .main-logo img { max-width: 100%; }
+
+.gnb-area .link-logo { display: block; }
+
+.gnb-area .nav-list { display: -webkit-box; display: -ms-flexbox; display: flex; font-family: "MaisonNeueBlack"; font-size: 1.25rem; letter-spacing: .06em; }
+
+.gnb-area .nav-item { margin-right: 40px; }
+
+.gnb-area .link-nav { display: block; }
+
+.sc-title { font-size: 1.2rem; font-weight: 600; text-transform: uppercase; line-height: 130%; letter-spacing: .04em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.sc-product .sc-title { padding: 0 4rem; margin-bottom: 3rem; }
+
+.sc-etc .sc-title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; margin-bottom: 3rem; }
+
+.section-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; height: 100vh; }
+
+.section { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.section.sc-brand { -webkit-box-flex: 0; -ms-flex: 0 0 170vw; flex: 0 0 170vw; }
+
+.section.sc-video { -webkit-box-flex: 0; -ms-flex: 0 0 70vw; flex: 0 0 70vw; }
+
+.section.sc-product { -webkit-box-flex: 0; -ms-flex: 0 0 180vw; flex: 0 0 180vw; }
+
+.section.sc-service { -webkit-box-flex: 0; -ms-flex: 0 0 280vw; flex: 0 0 280vw; }
+
+.section.sc-util { -webkit-box-flex: 0; -ms-flex: 0 0 77vw; flex: 0 0 77vw; }
+
+.sc-brand { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; }
+
+.sc-brand h2 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-266%, 24%); transform: translate(-266%, 24%); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; color: #fff068; font-family: "MaisonNeueBlack"; letter-spacing: .1em; line-height: .9; font-size: 11.25vh; margin: 0 0 -0.04em; padding: 30px; gap: 0.5rem; }
+
+.sc-brand h2 span { display: block; }
+
+.sc-brand .can1 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-213%, -39%); transform: translate(-213%, -39%); display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; }
+
+.sc-brand .can2 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-160%, -56%); transform: translate(-160%, -56%); display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; }
+
+.sc-brand .plant { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-75%, -7%); transform: translate(-75%, -7%); display: -webkit-box; display: -ms-flexbox; display: flex; height: 54%; }
+
+.sc-brand .rolling { position: absolute; top: 75%; left: 53%; -webkit-animation: rotate 6s linear infinite; animation: rotate 6s linear infinite; }
+
+@-webkit-keyframes rotate { 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+@keyframes rotate { 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+.sc-brand .text-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 22%; height: 100%; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(26%, -51%); transform: translate(26%, -51%); }
+
+.sc-brand .text-box p { font-size: 5vh; color: #fff068; font-family: "MaisonNeueBlack"; letter-spacing: .1em; line-height: 1.75; margin: 0; text-transform: uppercase; }
+
+.sc-brand .text-box p img { height: 4vh; margin-top: 1rem; }
+
+.sc-brand .text-box p span { color: #fff; }
+
+.sc-brand .can3 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(217%, -40%); transform: translate(217%, -40%); display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; }
+
+.sc-video { height: 100%; position: relative; }
+
+.sc-video .video-wrap { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-80%, -50%); transform: translate(-80%, -50%); }
+
+.sc-video .video-wrap video { border-radius: 35%/50%; height: 62vh; max-height: 100%; }
+
+.sc-video .cloud1 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-200%, -180%); transform: translate(-200%, -180%); width: 30%; }
+
+.sc-video .cloud2 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-30%, 30%); transform: translate(-30%, 30%); }
+
+.sc-product { height: 100%; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+
+.sc-product .product-box { height: 100%; }
+
+.sc-product .product-box .info-box { color: #fff068; height: 100%; padding: 76px; width: auto !important; }
+
+.sc-product .product-box .info-box h2 { width: 30rem; font-family: "MaisonNeueBlack"; font-weight: normal; letter-spacing: .1em; line-height: 1.15; text-transform: uppercase; font-size: 12vh; margin: 0 0 0.25em; }
+
+.sc-product .product-box .info-box h2 span { display: block; text-align: right; }
+
+.sc-product .product-box .info-box p { width: 45rem; font-family: "MaisonNeueMedium"; line-height: 3; font-size: 1.5rem; letter-spacing: 0.04em; text-align: justify; margin: 0 0 1.5em; }
+
+.sc-product .product-box .info-box p strong { font-family: "MaisonNeueBlack"; text-transform: uppercase; }
+
+.sc-product .product-box .info-box .btn-buy { background-color: #fff; border: 1px solid rgba(0, 0, 0, 0); border-radius: 50px; color: #03361f; display: inline-block; font-family: "MaisonNeueBlack"; letter-spacing: .1em; line-height: 70px; min-width: 210px; padding: 0 10px; text-align: center; font-size: 1rem; }
+
+.sc-product .product-box .info-box .btn-buy:hover { background: #fff068; }
+
+.sc-product .product-box .prd-list { display: -webkit-box; display: -ms-flexbox; display: flex; border-left: 1px solid #fff068; border-right: 1px solid #fff068; height: 100%; }
+
+.sc-product .product-box .prd-item + .prd-item { border-left: 1px solid #fff068; }
+
+.sc-product .product-box .prd-item { width: 27rem; position: relative; }
+
+.sc-product .product-box .prd-item::before { content: ''; background: #fff068; position: absolute; height: 1px; left: 5px; right: 5px; top: 0; }
+
+.sc-product .product-box .prd-item::after { content: ''; background: #fff068; position: absolute; height: 1px; left: 5px; right: 5px; bottom: 0; }
+
+.sc-product .product-box .prd-item .img-box { padding: 40px 0 30px; display: block; }
+
+.sc-product .product-box .prd-item .img-box img { display: block; height: 50vh; max-height: 480px; margin: 0 auto; }
+
+.sc-product .product-box .prd-item .text-box { margin: 0 5px; padding: 30px 20px; border-top: 1px solid #fff068; }
+
+.sc-product .product-box .prd-item .text-box h3 { font-family: "MaisonNeueBlack"; font-size: 1.5rem; letter-spacing: .1em; line-height: 1.25; margin: 0 0 1em; color: #fff; }
+
+.sc-product .product-box .prd-item .text-box .desc { color: #fff068; font-family: "MaisonNeueMedium"; letter-spacing: .04em; line-height: 1.7; margin: 0 0 1.5em; font-size: 1.1rem; }
+
+.sc-service { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; }
+
+.sc-service .cloud3 { position: absolute; left: 1%; top: 13%; z-index: 5; }
+
+.sc-service .cloud3 img { height: 110px; left: -8%; top: 12%; }
+
+.sc-service .snake { position: absolute; left: 5%; height: 100%; }
+
+.sc-service .snake img { height: 95vh; }
+
+.sc-service .cloud4 { position: absolute; bottom: 20%; left: 6%; z-index: 5; }
+
+.sc-service .cloud4 img { height: 20vh; left: -40vh; top: 58vh; width: auto; }
+
+.sc-service .img1 { position: absolute; left: 13%; }
+
+.sc-service .img1 img { height: 100vh; }
+
+.sc-service h2 { position: absolute; left: 30%; z-index: 6; color: #fff068; font-family: "MaisonNeueBlack"; letter-spacing: .1em; line-height: .9; text-transform: uppercase; font-size: 118px; }
+
+.sc-service .img2 { position: absolute; left: 41%; }
+
+.sc-service .img2 img { height: 69vh; margin-top: 9.8vh; width: auto; }
+
+.sc-service .img3 { position: absolute; left: 57%; top: 0; }
+
+.sc-service .img3 img { height: 40vh; width: auto; }
+
+.sc-service .img4 { position: absolute; bottom: 0; left: 52%; }
+
+.sc-service .img4 img { height: 47vh; width: auto; }
+
+.sc-service .cloud5 { position: absolute; left: 48%; }
+
+.sc-service .cloud5 img { height: 21vh; }
+
+.sc-service .img5 { position: absolute; left: 67%; top: 0; }
+
+.sc-service .img5 img { height: 68vh; margin-top: 17vh; }
+
+.sc-service .cloud6 { position: absolute; top: -7%; left: 75%; -webkit-transform: scaleX(-1); transform: scaleX(-1); }
+
+.sc-service .img6 { position: absolute; top: 0; left: 80%; }
+
+.sc-service .img6 img { height: 56vh; }
+
+.sc-service .img7 { position: absolute; bottom: 0; left: 83%; }
+
+.sc-service .img7 img { height: 33vh; }
+
+.sc-service .cloud7 { position: absolute; left: 89%; top: 46%; -webkit-transform: scaleX(-1); transform: scaleX(-1); }
+
+.sc-service .cloud7 img { height: 21vh; }
+
+.sc-util { position: relative; }
+
+.sc-util .sns-area { font-family: "MaisonNeueBlack"; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-500px, -100px); transform: translate(-500px, -100px); }
+
+.sc-util .sns-area strong { color: #fff068; font-size: 1rem; letter-spacing: .07em; margin-bottom: 1.5em; display: block; }
+
+.sc-util .sns-area .link-sns { color: #fff; display: block; font-size: 10vh; letter-spacing: .1em; }
+
+.sc-util .sns-area .link-sns:hover { color: #fff068; }
+
+.sc-util .fruit2 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(10%, -74%); transform: translate(10%, -74%); width: 35%; }
+
+.sc-util .util-area { display: -webkit-box; display: -ms-flexbox; display: flex; font-family: "MaisonNeueMedium"; letter-spacing: .04em; line-height: 1.875; margin: 0 0 1.5em; font-size: .875rem; letter-spacing: .04em; font-weight: 600; color: #fff068; position: absolute; bottom: 1.2rem; }
+
+.sc-util .util-area .copy { margin-right: 40px; display: inline-block; }
+
+.sc-util .util-area .util-list { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.sc-util .util-area .util-item { margin-right: 40px; text-decoration: underline; }
+
+.sc-util .btn-rewind { position: absolute; right: 2rem; bottom: 2rem; -webkit-animation: rotate 10s linear infinite; animation: rotate 10s linear infinite; }
+
+@keyframes rotate { 100% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); } }
+
+.sc-video .cloud1 { overflow: hidden; }
+
+.sc-video .cloud2 { overflow: hidden; }
+
+.sc-video .cloud1 .prd4 { -webkit-transform: translateX(-100%); transform: translateX(-100%); display: block; visibility: visible; }
+
+.sc-video .cloud1 .prd5 { -webkit-transform: translateX(-100%); transform: translateX(-100%); display: block; visibility: visible; }

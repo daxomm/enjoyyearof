@@ -1,0 +1,37 @@
+.gnb-area{
+  height: 62px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  padding: 20px 30px;
+  color: #fff068;
+
+  .main-logo{
+    margin-right: 55px;
+    
+    img{
+      max-width: 100%;
+    }
+  }
+  .link-logo{
+    display: block;
+  }
+
+  .nav-list{
+    display: flex;
+    font-family: "MaisonNeueBlack";
+    font-size: 1.25rem;
+    letter-spacing: .06em;
+  }
+
+  .nav-item{
+    margin-right: 40px;
+  }
+
+  .link-nav{
+    display: block;
+  }
+}

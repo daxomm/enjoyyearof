@@ -1,0 +1,559 @@
+.section-wrap{
+  display: flex;
+  height: 100vh;
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.sc-brand{flex: 0 0 170vw;}
+  &.sc-video{flex: 0 0 70vw;}
+  &.sc-product{flex: 0 0 180vw;}
+  &.sc-service{flex: 0 0 280vw;}
+  &.sc-util{flex: 0 0 77vw;}
+}
+
+.sc-brand{
+  position: relative;
+  display: flex;
+  height: 100%;
+  
+  h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-266%, 24%);
+    display: flex;
+    flex-direction: column;
+    color:#fff068;
+    font-family: "MaisonNeueBlack";
+    letter-spacing: .1em;
+    line-height: .9;
+    font-size: 11.25vh;
+    margin: 0 0 -0.04em;
+    padding: 30px;
+    gap:0.5rem;
+
+    span{
+      display: block;
+    }
+  }
+
+  .can1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-213%, -39%);
+    display: flex;
+    height: 100%;
+  }
+
+  .can2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-160%, -56%);
+    display: flex;
+    height: 100%;
+  }
+
+  .plant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -7%);
+    display: flex;
+    height: 54%;
+  }
+
+  .rolling{
+    position: absolute;
+    top: 75%;
+    left: 53%;
+    animation: rotate 6s linear infinite;
+
+    @keyframes rotate{
+      100% {
+          transform: rotate(360deg);
+      }
+    }
+  }
+
+  .text-box{
+    display: flex;
+    align-items: center;
+    width: 22%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(26%, -51%);
+    
+    p{
+      font-size: 5vh;
+      color:#fff068;
+      font-family: "MaisonNeueBlack";
+      letter-spacing: .1em;
+      line-height: 1.75;
+      margin: 0;
+      text-transform: uppercase;
+
+      img{
+        height: 4vh;
+        margin-top: 1rem;
+      }
+
+      span{
+        color: #fff;
+      }
+    }
+  }
+
+  .can3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(217%, -40%);
+    display: flex;
+    height: 100%;
+  }
+}
+
+.sc-video{
+  height: 100%;
+  position: relative;
+  .video-wrap{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+
+    video{
+      border-radius: 35%/50%;
+      height: 62vh;
+      max-height: 100%;
+    }
+  }
+
+  .cloud1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200%, -180%);
+    width: 30%;
+  }
+
+  .cloud2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, 30%);
+  }
+}
+
+.sc-product{
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .product-box{
+    height: 100%;
+
+    .info-box{
+      color:#fff068;
+      height: 100%;
+      padding: 76px;
+      width: auto !important;
+  
+      h2 {
+        width: 30rem;
+        font-family: "MaisonNeueBlack";
+        font-weight: normal;
+        letter-spacing: .1em;
+        line-height: 1.15;
+        text-transform: uppercase;
+        font-size: 12vh;
+        margin: 0 0 0.25em;
+  
+        span{
+          display: block;
+          text-align: right;
+        }
+      }
+  
+      p{
+        width: 45rem;
+        font-family: "MaisonNeueMedium";
+        line-height: 3;
+        font-size: 1.5rem;
+        letter-spacing: 0.04em;
+        text-align: justify;
+        margin: 0 0 1.5em;
+  
+        strong{
+        font-family: "MaisonNeueBlack";
+        text-transform: uppercase;
+        }
+      }
+  
+      .btn-buy{
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,0);
+        border-radius: 50px;
+        color: #03361f;
+        display: inline-block;
+        font-family: "MaisonNeueBlack";
+        letter-spacing: .1em;
+        line-height: 70px;
+        min-width: 210px;
+        padding: 0 10px;
+        text-align: center;
+        font-size: 1rem;
+  
+        &:hover{
+          background: #fff068;
+        }
+      }
+    }
+    
+    .prd-list{
+      display: flex;
+      border-left: 1px solid #fff068;
+      border-right: 1px solid #fff068;
+      height: 100%;
+    }
+
+    .prd-item+.prd-item{
+      border-left: 1px solid #fff068;
+    }
+
+    .prd-item{
+      width: 27rem;
+      position: relative;
+
+      &::before{
+        content: '';
+        background: #fff068;
+        position: absolute;
+        height: 1px;
+        left: 5px;
+        right: 5px;
+        top: 0;
+      }
+
+      &::after{
+        content: '';
+        background: #fff068;
+        position: absolute;
+        height: 1px;
+        left: 5px;
+        right: 5px;
+        bottom: 0;
+      }
+
+      .img-box{
+        padding: 40px 0 30px;
+        display: block;
+
+        img {
+          display: block;
+          height: 50vh;
+          max-height: 480px;
+          margin: 0 auto;
+        }
+      }
+
+      .text-box{
+        margin: 0 5px;
+        padding: 30px 20px;
+        border-top: 1px solid #fff068;
+
+        h3{
+          font-family: "MaisonNeueBlack";
+          font-size: 1.5rem;
+          letter-spacing: .1em;
+          line-height: 1.25;
+          margin: 0 0 1em;
+          color: #fff;
+        }
+        .desc {
+          color: #fff068;
+          font-family: "MaisonNeueMedium";
+          letter-spacing: .04em;
+          line-height: 1.7;
+          margin: 0 0 1.5em;
+          font-size:1.1rem;
+        }
+      }
+    }
+  }
+}
+
+.sc-service{
+  height: 100%;
+  display: flex;
+  position: relative;
+
+  .cloud3{
+    position: absolute;
+    left: 1%;
+    top: 13%;
+    z-index: 5;
+
+    img{
+      height: 110px;
+      left: -8%;
+      top: 12%;
+    }
+  }
+
+  .snake{
+    position: absolute;
+    left: 5%;
+    height: 100%;
+
+    img{
+      height: 95vh;
+    }
+  }
+
+  .cloud4{
+    position: absolute;
+    bottom: 20%;
+    left: 6%;
+    z-index: 5;
+
+    img{
+      height: 20vh;
+      left: -40vh;
+      top: 58vh;
+      width: auto;
+    }
+  }
+
+  .img1{
+    position: absolute;
+    left: 13%;
+
+    img{
+      height: 100vh;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    left: 30%;
+    z-index: 6;
+    color: #fff068;
+    font-family: "MaisonNeueBlack";
+    letter-spacing: .1em;
+    line-height: .9;
+    text-transform: uppercase;
+    font-size: 118px;
+  }
+
+  .img2{
+    position: absolute;
+    left: 41%;
+
+    img{
+      height: 69vh;
+      margin-top: 9.8vh;
+      width: auto;
+    }
+  }
+
+  .img3{
+    position: absolute;
+    left: 57%;
+    top: 0;
+
+    img{
+      height: 40vh;
+      width: auto;
+    }
+  }
+
+  .img4{
+    position: absolute;
+    bottom: 0;
+    left: 52%;
+
+    img{
+      height: 47vh;
+      width: auto;
+    }
+  }
+
+  .cloud5{
+    position: absolute;
+    left: 48%;
+
+    img{
+      height: 21vh;
+    }
+  }
+
+  .img5{
+    position: absolute;
+    left: 67%;
+    top: 0;
+
+    img{
+      height: 68vh;
+      margin-top: 17vh;
+    }
+  }
+
+  .cloud6{
+    position: absolute;
+    top: -7%;
+    left: 75%;
+    transform: scaleX(-1);
+  }
+
+  .img6{
+    position: absolute;
+    top: 0;
+    left: 80%;
+
+    img{
+      height: 56vh;
+    }
+  }
+
+  .img7{
+    position: absolute;
+    bottom: 0;
+    left: 83%;
+
+    img{
+      height: 33vh;
+    }
+  }
+
+  .cloud7{
+    position: absolute;
+    left: 89%;
+    top: 46%;
+    transform: scaleX(-1);
+
+    img{
+      height: 21vh;
+    }
+  }
+}
+
+.sc-util{
+  position: relative;
+
+  .sns-area{
+    font-family: "MaisonNeueBlack";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-500px, -100px);
+
+    strong {
+      color: #fff068;
+      font-size: 1rem;
+      letter-spacing: .07em;
+      margin-bottom: 1.5em;
+      display: block;
+    }
+
+    .link-sns{
+      color: #fff;
+      display: block;
+      font-size: 10vh;
+      letter-spacing: .1em;
+
+      &:hover {
+        color: #fff068;
+      }
+    }
+  }
+
+  .fruit2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(10%, -74%);
+    width: 35%;
+  }
+
+  .util-area{
+    display: flex;
+    font-family: "MaisonNeueMedium";
+    letter-spacing: .04em;
+    line-height: 1.875;
+    margin: 0 0 1.5em;
+    font-size: .875rem;
+    letter-spacing: .04em;
+    font-weight: 600;
+    color: #fff068;
+    position: absolute;
+    bottom: 1.2rem;
+
+    .copy{
+      margin-right: 40px;
+      display: inline-block;
+    }
+
+    .util-list{
+      display: flex;
+    }
+
+    .util-item{
+      margin-right: 40px;
+      text-decoration: underline;
+    }
+
+    .link-sns{}
+  }
+
+  .btn-rewind{
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    animation: rotate 10s linear infinite;
+
+    @keyframes rotate{
+      100% {
+          transform: rotate(-360deg);
+      }
+    }
+  }
+}
+
+
+
+.sc-video{
+  .cloud1{
+    overflow: hidden;
+  }
+
+  .cloud2{
+    overflow: hidden;
+  }
+}
+
+.sc-video{
+  .cloud1{
+    .prd4{
+      transform: translateX(-100%);
+      display: block;
+      visibility:visible;
+    }
+    
+    .prd5{
+      transform: translateX(-100%);
+      display: block;
+      visibility:visible;
+    }
+  }
+}
