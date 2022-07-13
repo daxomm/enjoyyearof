@@ -59,6 +59,20 @@ $(function(){
   m2.to('.prd4',{duration: 2, x:100, stagger:0.1})
   m2.to('.prd5',{duration: 2, x:-200, stagger:0.1}) */
 
+  
+   m3 = gsap.timeline({
+    defaults:{
+      ease:'none',
+    },
+    scrollTrigger:{
+        trigger:".sc-video",
+        start: "500%",
+        markers:true,
+    }
+  })
+
+  m3.to('.msg',{x:100, stagger:0.1})
+
 
 
 
