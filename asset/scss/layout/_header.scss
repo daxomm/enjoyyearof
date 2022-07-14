@@ -33,5 +33,9 @@
 
   .link-nav{
     display: block;
+
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }

@@ -71,7 +71,8 @@ $(function(){
     }
   })
 
-  m3.to('.msg',{x:100, stagger:0.1})
+  m3.to('.msg1',{opacity: 1, duration: 1.5, y:50, stagger:0.1})
+  m3.to('.msg2',{opacity: 1, duration: 1, y:-50, stagger:0.1})
 
 
 
