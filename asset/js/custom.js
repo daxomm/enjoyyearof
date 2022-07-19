@@ -73,11 +73,11 @@ $(function(){
     },
     scrollTrigger:{
         trigger:".sc-service",
-        start: "520%",
+        start: "600%",
     }
   })
 
-  m3.to('.msg1',{opacity: 1, duration: 0.3, y:50, delay: 1.2})
+  m3.to('.msg1',{opacity: 1, duration: 0.3, y:50, delay: 0.7})
   m3.to('.msg2',{opacity: 1, duration: 0.3, y:50, delay: 0.3})
 
 
