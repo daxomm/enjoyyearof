@@ -215,9 +215,9 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-service .img1 img { height: 100vh; }
 
-.sc-service h2 { position: absolute; left: 29%; z-index: 6; color: #fff068; font-family: "MaisonNeueBlack"; letter-spacing: .1em; line-height: -1; text-transform: uppercase; font-size: 118px; }
+.sc-service .big-msg { position: absolute; left: 29%; z-index: 6; color: #fff068; font-family: "MaisonNeueBlack"; letter-spacing: .1em; line-height: -1; text-transform: uppercase; font-size: 118px; }
 
-.sc-service h2 span { display: block; }
+.sc-service .big-msg span { display: block; }
 
 .sc-service .img2 { position: absolute; left: 41%; }
 
@@ -273,7 +273,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-util .util-area .util-item { margin-right: 40px; text-decoration: underline; }
 
-.sc-util .btn-rewind { position: absolute; right: 2rem; bottom: 2rem; -webkit-animation: rotate 10s linear infinite; animation: rotate 10s linear infinite; }
+.sc-util .btn-rewind { position: absolute; right: 2rem; bottom: 2rem; -webkit-animation: rotate 10s linear infinite; animation: rotate 10s linear infinite; cursor: pointer; }
 
 @keyframes rotate { 100% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); } }
 

@@ -360,7 +360,7 @@
     }
   }
 
-  h2 {
+  .big-msg {
     position: absolute;
     left: 29%;
     z-index: 6;
@@ -547,6 +547,7 @@
     right: 2rem;
     bottom: 2rem;
     animation: rotate 10s linear infinite;
+    cursor: pointer;
 
     @keyframes rotate{
       100% {
