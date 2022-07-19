@@ -1,5 +1,15 @@
 $(function(){
 
+   // 탑 버튼
+
+   $('.btn-rewind').click(function(){
+
+    $('html,body').animate({'scrollTop':0},400)
+
+  });
+
+
+
   gsap.to('.section-wrap',{
   
     scrollTrigger:{
@@ -10,16 +20,16 @@ $(function(){
       scrub:1,
       pin:true,
     },
-  
-    /* xPercent:-100 */
-    /* background:'#f00', */
-    //x:100
+
   
     xPercent:-677 /* 총 width 더한 값에서 100vh를 뺀다 */
   })
 
   // 강제 스크롤 모션 생성 , 트리거 강제적으로 만든 것
 
+
+
+  // sc-brand
 
   m1 = gsap.timeline({
     defaults: {
@@ -41,61 +51,57 @@ $(function(){
 
 
 
+  // sc-video
 
-
-/*   m2 = gsap.timeline({
+  m2 = gsap.timeline({
     defaults:{
       ease:'none',
     },
     scrollTrigger:{
         trigger:".sc-video",
-        start: "100%",
-        end: "170%",
-        scrub: 1,
+        start: "130%",
         markers:true,
     }
-  })
+  });
 
-  m2.to('.prd4',{duration: 2, x:100, stagger:0.1})
-  m2.to('.prd5',{duration: 2, x:-200, stagger:0.1}) */
+  m2.to('.prd4',{opacity: 1, duration: 0.2, y:60, delay: 0.4})
+  m2.to('.prd5',{opacity: 1, duration: 0.2, y:60, delay: 0.2})
 
+
+  // sc-service
   
    m3 = gsap.timeline({
     defaults:{
       ease:'none',
     },
     scrollTrigger:{
-        trigger:".sc-video",
-        start: "500%",
+        trigger:".sc-service",
+        start: "520%",
         markers:true,
     }
   })
 
-  m3.to('.msg1',{opacity: 1, duration: 1.5, y:50, stagger:0.1})
-  m3.to('.msg2',{opacity: 1, duration: 1, y:-50, stagger:0.1})
+  m3.to('.msg1',{opacity: 1, duration: 0.3, y:50, delay: 1.2})
+  m3.to('.msg2',{opacity: 1, duration: 0.3, y:50, delay: 0.3})
 
 
+  // sc-product
 
+  m4 = gsap.timeline({
+    defaults:{
+      ease:'none',
+    },
+    scrollTrigger:{
+        trigger:".sc-product",
+        start: "320%",
+        markers:true,
+    }
+  });
 
+  m4.to('.prd6',{opacity: 1, duration: 0.2, y:0, delay: 0.4})
+  m4.to('.prd7',{opacity: 1, duration: 0.2, y:0, delay: 0.4})
+  m4.to('.prd8',{opacity: 1, duration: 0.2, y:0, delay: 0.4})
+  m4.to('.prd9',{opacity: 1, duration: 0.2, y:0, delay: 0.2})
 
-
-
-
-// m1.paused(true);
-
-
-
-  /*   let total = 0;
-  
-  $('.section').each(function(index,el){
-    total+=$(this).outerWidth();
-  }) */
-
-
-  $('.btn-rewind').click(function(){
-
-    $('html,body').animate({'scrollTop':0},400)
-
-  })
 
 })// end

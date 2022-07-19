@@ -151,11 +151,11 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-video .video-wrap video { border-radius: 35%/50%; height: 62vh; max-height: 100%; }
 
-.sc-video .cloud1 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-130%, -180%); transform: translate(-130%, -180%); }
+.sc-video .cloud1 { position: absolute; top: 15%; left: 10%; -webkit-transition: all 0.2s ease; transition: all 0.2s ease; }
 
 .sc-video .cloud1 img { width: 23vw; }
 
-.sc-video .cloud2 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(10%, 60%); transform: translate(10%, 60%); }
+.sc-video .cloud2 { position: absolute; top: 50%; left: 60%; -webkit-transition: all 0.2s ease; transition: all 0.2s ease; }
 
 .sc-video .cloud2 img { width: 27vw; }
 
@@ -187,7 +187,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-product .product-box .prd-item::after { content: ''; background: #fff068; position: absolute; height: 1px; left: 5px; right: 5px; bottom: 0; }
 
-.sc-product .product-box .prd-item .img-box { padding: 40px 0 30px; display: block; }
+.sc-product .product-box .prd-item .img-box { padding: 40px 0 30px; display: block; opacity: 0; -webkit-transition: all 0.2s ease; transition: all 0.2s ease; }
 
 .sc-product .product-box .prd-item .img-box img { display: block; height: 50vh; max-height: 480px; margin: 0 auto; }
 
@@ -216,6 +216,8 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 .sc-service .img1 img { height: 100vh; }
 
 .sc-service .big-msg { position: absolute; left: 29%; z-index: 6; color: #fff068; font-family: "MaisonNeueBlack"; letter-spacing: .1em; line-height: -1; text-transform: uppercase; font-size: 118px; }
+
+.sc-service .big-msg p { opacity: 0; -webkit-transition: all 0.2s ease; transition: all 0.2s ease; }
 
 .sc-service .big-msg span { display: block; }
 
@@ -276,11 +278,3 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 .sc-util .btn-rewind { position: absolute; right: 2rem; bottom: 2rem; -webkit-animation: rotate 10s linear infinite; animation: rotate 10s linear infinite; cursor: pointer; }
 
 @keyframes rotate { 100% { -webkit-transform: rotate(-360deg); transform: rotate(-360deg); } }
-
-.sc-video .cloud1 { overflow: hidden; }
-
-.sc-video .cloud2 { overflow: hidden; }
-
-.sc-video .cloud1 .prd4 { -webkit-transform: translateX(-100%); transform: translateX(-100%); display: block; visibility: visible; }
-
-.sc-video .cloud1 .prd5 { -webkit-transform: translateX(-100%); transform: translateX(-100%); display: block; visibility: visible; }
