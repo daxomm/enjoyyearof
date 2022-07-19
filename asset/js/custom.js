@@ -16,7 +16,6 @@ $(function(){
       trigger:".section-wrap",
       start:"top top",
       end:"+=2000%",
-      markers:true,
       scrub:1,
       pin:true,
     },
@@ -40,7 +39,6 @@ $(function(){
       start: "0%",
       end: "170%",
       scrub: 1,
-      markers: true,
     }
   })
 
@@ -60,7 +58,6 @@ $(function(){
     scrollTrigger:{
         trigger:".sc-video",
         start: "130%",
-        markers:true,
     }
   });
 
@@ -77,7 +74,6 @@ $(function(){
     scrollTrigger:{
         trigger:".sc-service",
         start: "520%",
-        markers:true,
     }
   })
 
@@ -94,14 +90,13 @@ $(function(){
     scrollTrigger:{
         trigger:".sc-product",
         start: "320%",
-        markers:true,
     }
   });
 
-  m4.to('.prd6',{opacity: 1, duration: 0.2, y:0, delay: 0.4})
-  m4.to('.prd7',{opacity: 1, duration: 0.2, y:0, delay: 0.4})
-  m4.to('.prd8',{opacity: 1, duration: 0.2, y:0, delay: 0.4})
-  m4.to('.prd9',{opacity: 1, duration: 0.2, y:0, delay: 0.2})
+  m4.to('.prd6',{opacity: 1, duration: 0.3, y:0, delay: 0.4})
+  m4.to('.prd7',{opacity: 1, duration: 0.3, y:0, delay: 0.4})
+  m4.to('.prd8',{opacity: 1, duration: 0.3, y:0, delay: 0.4})
+  m4.to('.prd9',{opacity: 1, duration: 0.3, y:0, delay: 0.2})
 
 
 })// end
