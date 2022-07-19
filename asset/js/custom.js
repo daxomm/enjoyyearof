@@ -77,8 +77,8 @@ $(function(){
     }
   })
 
-  m3.to('.msg1',{opacity: 1, duration: 0.3, y:50, delay: 0.7})
-  m3.to('.msg2',{opacity: 1, duration: 0.3, y:50, delay: 0.3})
+  m3.to('.msg1',{opacity: 1, duration: 0.3, y:0, delay: 0.7})
+  m3.to('.msg2',{opacity: 1, duration: 0.3, y:0, delay: 0.3})
 
 
   // sc-product
@@ -93,9 +93,9 @@ $(function(){
     }
   });
 
-  m4.to('.prd6',{opacity: 1, duration: 0.3, y:0, delay: 0.4})
-  m4.to('.prd7',{opacity: 1, duration: 0.3, y:0, delay: 0.4})
-  m4.to('.prd8',{opacity: 1, duration: 0.3, y:0, delay: 0.4})
+  m4.to('.prd6',{opacity: 1, duration: 0.3, y:0, delay: 0.3})
+  m4.to('.prd7',{opacity: 1, duration: 0.3, y:0, delay: 0.2})
+  m4.to('.prd8',{opacity: 1, duration: 0.3, y:0, delay: 0.2})
   m4.to('.prd9',{opacity: 1, duration: 0.3, y:0, delay: 0.2})
 
 

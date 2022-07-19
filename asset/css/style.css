@@ -215,7 +215,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-service .img1 img { height: 100vh; }
 
-.sc-service .big-msg { position: absolute; left: 29%; z-index: 6; color: #fff068; font-family: "MaisonNeueBlack"; letter-spacing: .1em; line-height: -1; text-transform: uppercase; font-size: 118px; }
+.sc-service .big-msg { position: absolute; left: 29%; z-index: 6; color: #fff068; font-family: "MaisonNeueBlack"; letter-spacing: .1em; line-height: -1; text-transform: uppercase; font-size: 118px; top: 0; }
 
 .sc-service .big-msg p { opacity: 0; -webkit-transition: all 0.2s ease; transition: all 0.2s ease; }
 
