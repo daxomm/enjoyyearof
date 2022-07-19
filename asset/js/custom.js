@@ -57,7 +57,7 @@ $(function(){
     },
     scrollTrigger:{
         trigger:".sc-video",
-        start: "130%",
+        start: "140%",
     }
   });
 
