@@ -43,9 +43,9 @@ $(function(){
   })
 
   m1.addLabel('m1')
-  .to('.prd1',{duration: 3, x:-300},'m1')
-  .to('.prd2',{duration: 2.5, x:-350},'m1')
-  .to('.prd3',{duration: 3, x:-10},'m1')
+  .to('.prd1',{duration: 3, x:200},'m1')
+  .to('.prd2',{duration: 2.5, x:-300},'m1')
+  .to('.prd3',{duration: 3, x:-250},'m1')
 
 
 

@@ -115,15 +115,15 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-brand { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; }
 
-.sc-brand h2 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-266%, 24%); transform: translate(-266%, 24%); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; color: #fff068; font-family: "MaisonNeueBlack"; letter-spacing: .1em; line-height: .9; font-size: 11.25vh; margin: 0 0 -0.04em; padding: 30px; gap: 0.5rem; }
+.sc-brand h2 { position: absolute; bottom: 0; left: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; color: #fff068; font-family: "MaisonNeueBlack"; letter-spacing: .1em; line-height: .9; font-size: 11.25vh; margin: 0 0 -0.04em; padding: 30px; gap: 0.5rem; }
 
 .sc-brand h2 span { display: block; }
 
-.sc-brand .can1 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-213%, -39%); transform: translate(-213%, -39%); display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; }
+.sc-brand .can1 { position: absolute; top: 11%; left: 19%; display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; }
 
-.sc-brand .can2 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-160%, -56%); transform: translate(-160%, -56%); display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; }
+.sc-brand .can2 { position: absolute; top: -6%; left: 29.5%; display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; }
 
-.sc-brand .plant { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-75%, -7%); transform: translate(-75%, -7%); display: -webkit-box; display: -ms-flexbox; display: flex; height: 54%; }
+.sc-brand .plant { position: absolute; top: 46%; left: 41%; display: -webkit-box; display: -ms-flexbox; display: flex; height: 54%; }
 
 .sc-brand .rolling { position: absolute; top: 75%; left: 53%; -webkit-animation: rotate 6s linear infinite; animation: rotate 6s linear infinite; }
 
@@ -131,7 +131,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 @keyframes rotate { 100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
 
-.sc-brand .text-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 22%; height: 100%; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(26%, -51%); transform: translate(26%, -51%); }
+.sc-brand .text-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 22%; height: 100%; position: absolute; top: 0; left: 56%; }
 
 .sc-brand .text-box p { font-size: 5vh; color: #fff068; font-family: "MaisonNeueBlack"; letter-spacing: .1em; line-height: 1.75; margin: 0; text-transform: uppercase; }
 
@@ -139,7 +139,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-brand .text-box p span { color: #fff; }
 
-.sc-brand .can3 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(217%, -40%); transform: translate(217%, -40%); display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; }
+.sc-brand .can3 { position: absolute; top: 10%; left: 70%; display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; }
 
 .sc-brand .tiger { position: absolute; bottom: 0; right: -10%; }
 
@@ -265,7 +265,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button, textarea::-w
 
 .sc-util .sns-area .link-sns:hover { color: #fff068; }
 
-.sc-util .fruit2 { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(10%, -74%); transform: translate(10%, -74%); width: 35%; }
+.sc-util .fruit2 { position: absolute; top: -13%; left: 53%; width: 35%; }
 
 .sc-util .util-area { display: -webkit-box; display: -ms-flexbox; display: flex; font-family: "MaisonNeueMedium"; letter-spacing: .04em; line-height: 1.875; margin: 0 0 1.5em; font-size: .875rem; letter-spacing: .04em; font-weight: 600; color: #fff068; position: absolute; bottom: 1.2rem; }
 
